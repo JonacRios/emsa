@@ -35,7 +35,7 @@ Este es el link del repositorio publico https://github.com/JonacRios/Emsa/Client
 6. **Registrar un cliente:**
    - Ir a la ruta [localhost://](http://localhost:8081/)register-energy
    En el momento que se le da save, se iniciara automaticamente una instancia en camunda, obvio esto solo funcionara si y solo si el proceso de negocio de camunda esta desplegado.
-![image](https://github.com/JonacRios/emsa/CliEmsa/src/main/resources/capturas/1.PNG)
+![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/1.PNG)
 7. **Ver inicio de instancia en Camunda:**
     - Una vez guardado la solicitudm esta pasara automaticamente a camunda, quien recibira toda la informacion e iniciara una instancia.
     - Asi se miraria la instancia creada en camunda

@@ -1,0 +1,46 @@
+{
+  "components": [
+    {
+      "text": "# Terminos y condicicones",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0r9ddau",
+        "columns": null
+      },
+      "id": "Field_0l31gd2"
+    },
+    {
+      "text": "CONDICIONES PARTICULARES DE  VENTA \n\nEl cliente reconoce conocer, en el momento de la realización del pedido, las condiciones particulares de venta indicadas en la página web (nombre, precio, materiales, medida, cantidad, color, detalles de los productos, etc.) y declara expresamente su deseo de adquirir dicho(s) producto(s) una vez confirmado el pago.\nLa realización del pedido y su confirmación por parte del cliente materializan la aceptación plena y completa de las condiciones particulares de venta.\n \n\nPAGO\n\nLuego de la confirmación de la compra, su pedido entrará en proceso de verificación de la disponibilidad, su valor y datos para realizar el pago. \nEn el caso de giros el cliente asume el valor de la comisión bancaria.\nEl cliente deberá realizar el 100% del pago para que su pedido sea despachado.\n \n\nENVÍOS \n\nRealizamos envíos nacionales para compras al detal y al por mayor.\nEl costo del envío al por mayor será asumido por el cliente, el pedido se enviará para pago contra entrega únicamente en la ciudad de Medellin y municipios aledaños (Copacabana, Bello, Itagüí, Envigado, Sabaneta, La estrella y Caldas).\n \n\nGARANTÍAS \n\nNuestra garantía solo es por defectos de fabricación como productos mal terminados, despegados o con piezas defectuosas, el cliente contará con un tiempo máximo de 5 días a partir de la fecha de recibo para reportar el producto que llega dañado y proceder a hacer la respectiva reclamación. \nUna vez aprobada la garantía por EMSA, se informara los pasos a seguir a la cliente para el envío de la prenda a la bodega de EMSA.\nLas reclamaciones solo se reciben de la persona que realizo y pago el pedido no de clientes finales o conocidos de nuestros distribuidores; estos deberán tramitar la garantía a través de nuestro cliente mayorista o distribuidor.\n \n\nPROMOCIONES\n\nLas promociones publicadas en la  pagina de emsa www.emsacol.com no son acumulables con otras promociones, campanas o descuentos. Eso significa que no puedes combinar diferentes descuentos entre si ni con promociones vigentes u otros descuentos.",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1o711q2",
+        "columns": null
+      },
+      "id": "Field_1xhijci"
+    },
+    {
+      "label": "Aceptar terminos y condiciones",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0ji8g6i",
+        "columns": null
+      },
+      "id": "Field_1ayy9ic",
+      "key": "tyc",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "form_tyc",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 15
+}

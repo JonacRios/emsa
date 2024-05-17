@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_01n6x3u" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.20.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <decision id="factura" name="Facturar">
+    <decisionTable id="DecisionTable_1sse2g7" hitPolicy="FIRST">
+      <input id="Input_1" label="Deuda por consumo" biodi:width="192" camunda:inputVariable="checkConsumo">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ogzux7" label="Deuda Medidor" camunda:inputVariable="checkMedidor">
+        <inputExpression id="LiteralExpression_131kf5m" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1xyhrff" label="Deuda por la instalación" biodi:width="192" camunda:inputVariable="checkInstalacion">
+        <inputExpression id="LiteralExpression_0nv64ei" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Tipo de factura" name="tipoFac" typeRef="string" />
+      <rule id="DecisionRule_0rgyv0j">
+        <inputEntry id="UnaryTests_07jaoyz">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s187qj">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fo7r73">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09ckcqz">
+          <text>"Factura tipo 1"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0zgvuu0">
+        <inputEntry id="UnaryTests_07fef9e">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cny6qk">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cckifr">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_052jmv1">
+          <text>"Factura tipo 2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1reb74p">
+        <inputEntry id="UnaryTests_1yog1aw">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0krfk5k">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wzzhuf">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1pr6u9c">
+          <text>"Factura tipo 3"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0usivwb">
+        <inputEntry id="UnaryTests_1t16jsa">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0av07t7">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06dxjl9">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cgy3yo">
+          <text>"Factura tipo 4"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tj5tz1">
+        <inputEntry id="UnaryTests_0hldsco">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b9ahx3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q85bn4">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xp8yvo">
+          <text></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="factura">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

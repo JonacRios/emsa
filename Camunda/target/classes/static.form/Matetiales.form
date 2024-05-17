@@ -1,0 +1,190 @@
+{
+  "components": [
+    {
+      "text": "# Lista de Materiales a usar segun el tipo de servicio",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ot60ck",
+        "columns": null
+      },
+      "id": "Field_05vjp03"
+    },
+    {
+      "label": "Herramientas y equipos de instalación",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0mhrsj2",
+        "columns": null
+      },
+      "id": "Field_1yy4kmy",
+      "key": "herramientas"
+    },
+    {
+      "label": "Equipos de medición y control",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0mhrsj2",
+        "columns": null
+      },
+      "id": "Field_02sur0i",
+      "key": "equipos"
+    },
+    {
+      "values": [
+        {
+          "label": "Monofasico",
+          "value": "Mono"
+        },
+        {
+          "label": "Bifasico",
+          "value": "Bi"
+        },
+        {
+          "label": "Trifasico",
+          "value": "Tri"
+        }
+      ],
+      "label": "Tipo de Servicio",
+      "type": "select",
+      "layout": {
+        "row": "Row_1jbbuwk",
+        "columns": null
+      },
+      "id": "Field_0wi1eif",
+      "key": "tipoServicio"
+    },
+    {
+      "label": "Accesorios de conexión y distribución Monofásico ",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1jbbuwk",
+        "columns": null
+      },
+      "id": "Field_16vvwxh",
+      "key": "a1",
+      "conditional": {
+        "hide": "=tipoServicio = \"Bi\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Accesorios de conexión y distribución Trifásico ",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_15bq2hy",
+        "columns": null
+      },
+      "id": "Field_04flwb3",
+      "key": "a3",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Bi\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Accesorios de conexión y distribución Bifásico ",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1aot9tf",
+        "columns": null
+      },
+      "id": "Field_0lnmivg",
+      "key": "a2",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Cableado eléctrico Monofásico",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_110g54z",
+        "columns": 16
+      },
+      "id": "Field_03p308k",
+      "key": "c1",
+      "conditional": {
+        "hide": "=tipoServicio = \"Bi\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Cableado eléctrico Bifásico",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0o7r4p0",
+        "columns": null
+      },
+      "id": "Field_02wd7lm",
+      "key": "c2",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Cableado eléctrico Trifásico",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_18uj5cr",
+        "columns": null
+      },
+      "id": "Field_17x44hg",
+      "key": "c3",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Bi\" or tipoServicio = null"
+      },
+      "disabled": false
+    },
+    {
+      "label": "Dispositivos de protección y control Monofásicos",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_13kvawe",
+        "columns": null
+      },
+      "id": "Field_0j3vlhr",
+      "key": "d1",
+      "conditional": {
+        "hide": "=tipoServicio = \"Bi\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      }
+    },
+    {
+      "label": "Dispositivos de protección y control Bifásicos",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1ifjzfm",
+        "columns": null
+      },
+      "id": "Field_1ub40rt",
+      "key": "d2",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Tri\" or tipoServicio = null"
+      }
+    },
+    {
+      "label": "Dispositivos de protección y control Trifásicos",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0od0ihi",
+        "columns": null
+      },
+      "id": "Field_1ue2lys",
+      "key": "d3",
+      "conditional": {
+        "hide": "=tipoServicio = \"Mono\" or tipoServicio = null or tipoServicio = \"Bi\" or tipoServicio = null"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "materiales",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 15
+}

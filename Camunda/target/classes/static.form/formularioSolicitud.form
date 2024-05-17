@@ -1,0 +1,457 @@
+{
+  "components": [
+    {
+      "text": "# Solicitud",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1wkt4bm",
+        "columns": null
+      },
+      "id": "Field_1d6cmg3"
+    },
+    {
+      "label": "Numero de identificacion",
+      "type": "number",
+      "layout": {
+        "row": "Row_15t1x7g",
+        "columns": null
+      },
+      "id": "Field_0mh6urm",
+      "key": "id",
+      "validate": {
+        "required": true
+      },
+      "serializeToString": true
+    },
+    {
+      "label": "Nombre completo",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1kit3de",
+        "columns": 8
+      },
+      "id": "Field_1qlci30",
+      "key": "nombre",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Numero de contacto",
+      "type": "number",
+      "layout": {
+        "row": "Row_1kit3de",
+        "columns": null
+      },
+      "id": "Field_1od437d",
+      "key": "numero",
+      "validate": {
+        "required": true
+      },
+      "serializeToString": true
+    },
+    {
+      "label": "Direccion",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0usuqak",
+        "columns": null
+      },
+      "id": "Field_05zkmyu",
+      "key": "direccion",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Villa Suarez",
+          "value": "Villa Suarez"
+        },
+        {
+          "label": "El Paraiso",
+          "value": "El Paraiso"
+        },
+        {
+          "label": "Florencia",
+          "value": "Florencia"
+        },
+        {
+          "label": "La Ceiba",
+          "value": "La Ceiba"
+        },
+        {
+          "label": "Jordan",
+          "value": "Jordan"
+        },
+        {
+          "label": "Santa Helena",
+          "value": "Santa Helena"
+        },
+        {
+          "label": "El Bambu",
+          "value": "El Bambu"
+        },
+        {
+          "label": "Madrigal",
+          "value": "Madrigal"
+        },
+        {
+          "label": "La Bastilla",
+          "value": "La Bastilla"
+        },
+        {
+          "label": "Seis de Abril",
+          "value": "Seis de Abril"
+        },
+        {
+          "label": "Santa Martha",
+          "value": "Santa Martha"
+        },
+        {
+          "label": "Antonio Villavicencio",
+          "value": "Antonio Villavicencio"
+        },
+        {
+          "label": "Morichal",
+          "value": "Morichal"
+        },
+        {
+          "label": "San Luis",
+          "value": "San Luis"
+        },
+        {
+          "label": "El Recreo",
+          "value": "El Recreo"
+        },
+        {
+          "label": "La Desmotadora",
+          "value": "La Desmotadora"
+        },
+        {
+          "label": "Prados De Ciberia",
+          "value": "Prados De Ciberia"
+        },
+        {
+          "label": "Cedritos",
+          "value": "Cedritos"
+        },
+        {
+          "label": "Covisan",
+          "value": "Covisan"
+        },
+        {
+          "label": "Calamar",
+          "value": "Calamar"
+        },
+        {
+          "label": "El Cedral",
+          "value": "El Cedral"
+        },
+        {
+          "label": "Villa Fabiola",
+          "value": "Villa Fabiola"
+        },
+        {
+          "label": "Populares",
+          "value": "Populares"
+        },
+        {
+          "label": "Dos Mil",
+          "value": "Dos Mil"
+        },
+        {
+          "label": "Olimpica",
+          "value": "Olimpica"
+        },
+        {
+          "label": "Villa Ortiz",
+          "value": "Villa Ortiz"
+        },
+        {
+          "label": "Camelias",
+          "value": "Camelias"
+        },
+        {
+          "label": "Cataluña",
+          "value": "Cataluña"
+        },
+        {
+          "label": "Bello Horizonte",
+          "value": "Bello Horizonte"
+        },
+        {
+          "label": "Nueva Floresta",
+          "value": "Nueva Floresta"
+        },
+        {
+          "label": "Estero",
+          "value": "Estero"
+        },
+        {
+          "label": "Value 32",
+          "value": "value32"
+        },
+        {
+          "label": "Bochica",
+          "value": "Bochica"
+        },
+        {
+          "label": "Macunaima",
+          "value": "Macunaima"
+        },
+        {
+          "label": "Ariguani",
+          "value": "Ariguani"
+        },
+        {
+          "label": "Vizcaya",
+          "value": "Vizcaya"
+        },
+        {
+          "label": "Hacaritama",
+          "value": "Hacaritama"
+        },
+        {
+          "label": "Villa Melida",
+          "value": "Villa Melida"
+        },
+        {
+          "label": "San Antonio",
+          "value": "San Antonio"
+        },
+        {
+          "label": "Aguas Claras",
+          "value": "Aguas Claras"
+        },
+        {
+          "label": "Danubio",
+          "value": "Danubio"
+        },
+        {
+          "label": "Doña Luz",
+          "value": "Doña Luz"
+        },
+        {
+          "label": "Remanso",
+          "value": "Remanso"
+        },
+        {
+          "label": "Menegua",
+          "value": "Menegua"
+        },
+        {
+          "label": "Buenos Aires",
+          "value": "Buenos Aires"
+        },
+        {
+          "label": "Pastrana",
+          "value": "Pastrana"
+        },
+        {
+          "label": "Caney",
+          "value": "Caney"
+        },
+        {
+          "label": "Simon Bolivar",
+          "value": "Simon Bolivar"
+        },
+        {
+          "label": "Macarena",
+          "value": "Macarena"
+        },
+        {
+          "label": "Retiro",
+          "value": "Retiro"
+        },
+        {
+          "label": "Amaral",
+          "value": "Amaral"
+        },
+        {
+          "label": "Canaima",
+          "value": "Canaima"
+        },
+        {
+          "label": "Nuevo Maizaro",
+          "value": "Nuevo Maizaro"
+        },
+        {
+          "label": "Cataumbo",
+          "value": "Catatumbo"
+        },
+        {
+          "label": "Nogal",
+          "value": "Nogal"
+        },
+        {
+          "label": "San Benito",
+          "value": "San Benito"
+        },
+        {
+          "label": "Florida",
+          "value": "Florida"
+        },
+        {
+          "label": "Guatiquia",
+          "value": "Guatiquia"
+        },
+        {
+          "label": "Canta Rana",
+          "value": "Canta Rana"
+        },
+        {
+          "label": "Nuevo Recaute",
+          "value": "Nuevo Recaute"
+        },
+        {
+          "label": "San Francisco",
+          "value": "San Francisco"
+        },
+        {
+          "label": "Brisas el Caney",
+          "value": "Brisas del Caney"
+        },
+        {
+          "label": "Sausalito",
+          "value": "Sausalito"
+        }
+      ],
+      "label": "Barrio",
+      "type": "select",
+      "layout": {
+        "row": "Row_1jafqeu",
+        "columns": null
+      },
+      "id": "Field_0q3tbw7",
+      "key": "barrio",
+      "searchable": true,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Estrato 1",
+          "value": "1"
+        },
+        {
+          "label": "Estrato 2",
+          "value": "2"
+        },
+        {
+          "label": "Estrato 3",
+          "value": "3"
+        },
+        {
+          "label": "Estrato 4",
+          "value": "4"
+        },
+        {
+          "label": "Estrato 5",
+          "value": "5"
+        },
+        {
+          "label": "Estrato 6",
+          "value": "6"
+        }
+      ],
+      "label": "Estrato social",
+      "type": "select",
+      "layout": {
+        "row": "Row_1vnqite",
+        "columns": 4
+      },
+      "id": "Field_1synleb",
+      "key": "estrato",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Cliente",
+          "value": "cliente"
+        },
+        {
+          "label": "Empresa",
+          "value": "empresa"
+        }
+      ],
+      "label": "¿Quien proporciona el medidor?",
+      "type": "select",
+      "layout": {
+        "row": "Row_1vnqite",
+        "columns": 4
+      },
+      "id": "Field_1w621wd",
+      "key": "medidor",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Residencial",
+          "value": "Residencial"
+        },
+        {
+          "label": "Comercial",
+          "value": "Comercial"
+        }
+      ],
+      "label": "Uso del servicio",
+      "type": "select",
+      "layout": {
+        "row": "Row_1vnqite",
+        "columns": 4
+      },
+      "id": "Field_1la1ffp",
+      "key": "servicio",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "values": [
+        {
+          "label": "Monofásico",
+          "value": "Mono"
+        },
+        {
+          "label": "Bifásico",
+          "value": "Bi"
+        },
+        {
+          "label": "Trifásico",
+          "value": "Tri"
+        }
+      ],
+      "label": "Tipo de servicio",
+      "type": "select",
+      "layout": {
+        "row": "Row_1vnqite",
+        "columns": null
+      },
+      "id": "Field_1ad5luq",
+      "key": "tipo",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "form_solicitud",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 15
+}

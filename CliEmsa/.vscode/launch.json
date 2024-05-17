@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EmsaApplication<emsa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.emsa.client.EmsaApplication",
+            "projectName": "emsa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

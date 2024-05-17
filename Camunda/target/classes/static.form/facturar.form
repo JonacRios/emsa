@@ -1,0 +1,99 @@
+{
+  "components": [
+    {
+      "text": "# Facturar",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0ze19f2",
+        "columns": null
+      },
+      "id": "Field_0t6chys"
+    },
+    {
+      "label": "Consumo",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_04ozuo6",
+        "columns": null
+      },
+      "id": "Field_1e2s21d",
+      "key": "checkConsumo",
+      "defaultValue": true,
+      "disabled": false,
+      "readonly": true,
+      "properties": {}
+    },
+    {
+      "label": "Valor del consumo",
+      "type": "number",
+      "layout": {
+        "row": "Row_1ubpo3z",
+        "columns": null
+      },
+      "id": "Field_0d69drc",
+      "key": "consumo",
+      "serializeToString": true,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Agregar deuda medidor",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_01goffr",
+        "columns": null
+      },
+      "id": "Field_1wkroyr",
+      "key": "checkMedidor"
+    },
+    {
+      "label": "Ingrese el valor del medidor",
+      "type": "number",
+      "layout": {
+        "row": "Row_0j4x9za",
+        "columns": null
+      },
+      "id": "Field_1h9xgbc",
+      "key": "medidor",
+      "conditional": {
+        "hide": "=checkMedidor = false"
+      },
+      "serializeToString": true
+    },
+    {
+      "label": "Agregar deuda de instalacion",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_16x5wcs",
+        "columns": null
+      },
+      "id": "Field_1coqjsb",
+      "key": "checkInstalacion"
+    },
+    {
+      "label": "Ingrese valor de la deuda de instalacion",
+      "type": "number",
+      "layout": {
+        "row": "Row_06mxc8i",
+        "columns": null
+      },
+      "id": "Field_10srmol",
+      "key": "instalacion",
+      "conditional": {
+        "hide": "=checkInstalacion = false"
+      },
+      "serializeToString": true
+    }
+  ],
+  "type": "default",
+  "id": "form_factura",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 15
+}

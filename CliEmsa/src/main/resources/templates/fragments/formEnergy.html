@@ -1,0 +1,85 @@
+
+<div class="card-body d-flex" th:if="${person!= null}">
+    <div class="card col-md-6">
+        <div class="card-header">
+            <div class="card-title">
+                <h3 class="text-center">Person information</h3>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-floating mb-3 p-1">
+                <input class="form-control" id="id1" type="text" name="person.id" placeholder="Ingrese su DNI"
+                    th:value="${person.getId()}" required onblur="validateDNI(this)"
+                    th:attr="readonly=${person.getId() != null}">
+                <label for="id1"> DNI: </label>
+            </div>
+            <div class="form-floating mb-3 p-1">
+                <input class="form-control" id="nombre" type="text" name="person.Nombre"
+                    placeholder="Ingrese su nombre completo"
+                    th:value="${person.getNombre() != null  ? person.getNombre() : 'Carlos Martínez'}" required
+                    onblur="validateNombre(this)">
+                <label for="nombre"> Nombre: </label>
+            </div>
+            <div class="form-floating mb-3 p-1">
+                <input class="form-control" id="email" type="email" name="person.email"
+                    placeholder="Ingrese su correo electrónico"
+                    th:value="${person.getEmail() != null ? person.getEmail() : 'prueba1@gmail.com'}" required
+                    onblur="validateEmail(this)">
+                <label for="email"> Correo Electrónico: </label>
+            </div>
+            <div class="form-floating mb-3 p-1">
+                <input class="form-control" id="telefono" type="text" name="person.telefono"
+                    th:value="${person.getTelefono() != null ? person.getTelefono() : '3155677654'}"
+                    placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}" required
+                    onblur="validatePhoneNumber(this)">
+                <label for="telefono"> Número de Teléfono: </label>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="card-header">
+    <div class="card-title">
+        <h1 class="text-center">Energy Information</h1>
+    </div>
+</div>
+<div class="card-body">
+    <div class="form-floating mb-3 p-1">
+        <input class="form-control" type="text" id="barrio" name="barrio" placeholder="Ingrese su barrio" required
+            onblur="validateBarrio(this)">
+        <label for="barrio">Barrio:</label>
+    </div>
+    
+    <div class="form-floating mb-3 p-1">
+        <label for="tipo">Tipo de Servicio:</label>
+        <select class="form-control" id="tipo" name="tipo">
+          <option value="Mono">Monofásico</option>
+          <option value="Bi">Bifásico</option>
+          <option value="Tri">Trifásico</option>
+        </select>
+      </div>
+      <div class="form-floating mb-3 p-1">
+        <label for="servicio">Tipo de Uso:</label>
+        <select class="form-control" id="servicio" name="servicio">
+          <option value="Comercial">Comercial</option>
+          <option value="Residencial">Residencial</option>
+        </select>
+      </div>
+      <div class="form-floating mb-3 p-1">
+        <label for="estrato">Estrato:</label>
+        <select class="form-control" id="estrato" name="estrato">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+      <div class="form-floating mb-3 p-1">
+        <label for="medidor">Quein proporciona el medidor:</label>
+        <select class="form-control" id="medidor" name="medidor">
+          <option value="cliente">Cliente</option>
+          <option value="empresa">Empresa</option>
+        </select>
+      </div>
+</div>

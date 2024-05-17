@@ -1,0 +1,117 @@
+{
+  "components": [
+    {
+      "text": "# Verificar informacion",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1rgglum",
+        "columns": null
+      },
+      "id": "Field_17hldnb"
+    },
+    {
+      "label": "Autorización escrita o Certificado de Tradición y Libertad o Declaración extra-juicio ante un notario",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1k52px3",
+        "columns": null
+      },
+      "id": "Field_0l4xi8o",
+      "key": "autorizacion",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Certificado de estratificación expedido por la Alcaldía Municipal",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_10a8mt9",
+        "columns": null
+      },
+      "id": "Field_0ynkzw2",
+      "key": "estratificacion",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Fotocopia del recibo de energía de un vecino",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0euw1fd",
+        "columns": null
+      },
+      "id": "Field_1dq4ih8",
+      "key": "recibo",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Presentarse con el técnico electricista que efectuó la instalación interna",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_13ih498",
+        "columns": null
+      },
+      "id": "Field_1eibuzy",
+      "key": "tecnico",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Fotocopia de la tarjeta profesional del técnico electricista legible y vigente.",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0idqg2p",
+        "columns": null
+      },
+      "id": "Field_13o7wr6",
+      "key": "tarjeta",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Viabilidad del servicio en el sector ",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1ogiusi",
+        "columns": null
+      },
+      "id": "Field_07xxmxz",
+      "key": "viabilidad",
+      "conditional": {
+        "hide": "=if typeConection = \"conection1\" then true else false"
+      },
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Certificación o Informe de Revisión Técnica de la obra o predio expedido por la EMSA ESP",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1k4act8",
+        "columns": null
+      },
+      "id": "Field_16ilyfn",
+      "key": "certificacion",
+      "validate": {
+        "required": false
+      }
+    }
+  ],
+  "type": "default",
+  "id": "documentos",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 15
+}

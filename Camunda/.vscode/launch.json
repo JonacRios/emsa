@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<parcial>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.emsa.Application",
+            "projectName": "parcial",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

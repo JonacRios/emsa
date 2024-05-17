@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="Definitions_066gzhi" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.20.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <decision id="tarifas" name="Tarifas Eléctricas" camunda:historyTimeToLive="0">
+    <decisionTable id="DecisionTable_088dzia">
+      <input id="Input_1" label="Estrato Social" camunda:inputVariable="estrato">
+        <inputExpression id="InputExpression_1" typeRef="integer">
+          <text>estrato</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ayddh2" label="Tipo de Conexión (Monofásica, Bifásica,  Trifásica)" camunda:inputVariable="tipo">
+        <inputExpression id="LiteralExpression_0yqkl21" typeRef="string">
+          <text>tipo</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_05oard1" label="Uso" biodi:width="192" camunda:inputVariable="servicio">
+        <inputExpression id="LiteralExpression_11kahlc" typeRef="string">
+          <text>servicio</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Tarifa Base" name="tarifasResultado" typeRef="string" />
+      <rule id="DecisionRule_0vs5tq4">
+        <inputEntry id="UnaryTests_0kn6h03">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vfrxgg">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1plu5hv">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_039w0tk">
+          <text>"364,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ibmcw7">
+        <inputEntry id="UnaryTests_081lsbc">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0abyj8h">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09sl482">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1h9nc16">
+          <text>"455,65 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yr1sq8">
+        <inputEntry id="UnaryTests_0rnkage">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1shskmp">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1eww7ww">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16bkrzm">
+          <text>"749,29 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xss54n">
+        <inputEntry id="UnaryTests_1kovhxm">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eg7h6d">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wn0ntn">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cb34tp">
+          <text>"881,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15p3f9g">
+        <inputEntry id="UnaryTests_1o668mk">
+          <text>5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09e0u11">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f9u51q">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_198bqvh">
+          <text>"1.057,82 por kWh</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lpqz0u">
+        <inputEntry id="UnaryTests_0773q96">
+          <text>6</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dbwot0">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d2dos1">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0p8gumr">
+          <text>"1.057,82 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pz1cm7">
+        <inputEntry id="UnaryTests_128jngl">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_199v6ke">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17gacei">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0q0wrmo">
+          <text>"400,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mlztq3">
+        <inputEntry id="UnaryTests_1serj94">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qqvfuk">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wn7q5e">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07zlh2t">
+          <text>"500,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1gb0fon">
+        <inputEntry id="UnaryTests_1lmws0a">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ee23sk">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0k6yysl">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09u8s3h">
+          <text>"900,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wl5pv1">
+        <inputEntry id="UnaryTests_0r7wk7w">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_018odi8">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0y0onv9">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05rbrco">
+          <text>"1200,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_155w271">
+        <inputEntry id="UnaryTests_02we7ap">
+          <text>5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bjde57">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0diwpkz">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wf1jvs">
+          <text>"1500,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10u48i8">
+        <inputEntry id="UnaryTests_1dxe234">
+          <text>6</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_039o5r8">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ctoed9">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0drtmcn">
+          <text>"500,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11ew0vm">
+        <inputEntry id="UnaryTests_1dpsdye">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xzyxp1">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gfzdqd">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fhv10x">
+          <text>"600,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0r4sjw6">
+        <inputEntry id="UnaryTests_06cua4e">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e7ugpl">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0t55r42">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0b2no41">
+          <text>"1000,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0biyr8y">
+        <inputEntry id="UnaryTests_0e59y6a">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06t8q82">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fopw0j">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0eqptxs">
+          <text>"1200,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xuwina">
+        <inputEntry id="UnaryTests_06msyxq">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sgrcwf">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e1tok5">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1azgjmw">
+          <text>"1500,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09rrwxw">
+        <inputEntry id="UnaryTests_0xbafml">
+          <text>5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0nw3xtg">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05nkqlg">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04q9l93">
+          <text>"2000,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_191p1p8">
+        <inputEntry id="UnaryTests_1u41qwv">
+          <text>6</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d5lddp">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ggvyhs">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mwmatc">
+          <text>"2500,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1v4c5uw">
+        <inputEntry id="UnaryTests_0mo84m0">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16o2sl7">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w4frgy">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jfsj72">
+          <text>"784,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14kscqs">
+        <inputEntry id="UnaryTests_00rc9vq">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wb801v">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1te5yfi">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ia4167">
+          <text>"800,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0blyipi">
+        <inputEntry id="UnaryTests_1090h5e">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10dd4s8">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1olx8in">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1e6bgiz">
+          <text>"850,52 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nt0m9o">
+        <inputEntry id="UnaryTests_1ucet1w">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qzxc1i">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0akgfao">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1b1lv45">
+          <text>"900,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tywz58">
+        <inputEntry id="UnaryTests_1xh668g">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02ubg3f">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19jecp9">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z3jeaw">
+          <text>"800,90 por kWh</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0drvbt3">
+        <inputEntry id="UnaryTests_1jjj5ba">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qro9dz">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19ua58q">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mtp8hl">
+          <text>"850,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16h2u21">
+        <inputEntry id="UnaryTests_1kulh3s">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ca9d5a">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_043e5mq">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n7pb7w">
+          <text>"900,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02f6fbh">
+        <inputEntry id="UnaryTests_14fchj9">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mik6h8">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tljolu">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mh8k8i">
+          <text>"950,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_12r89nr">
+        <inputEntry id="UnaryTests_063lkjk">
+          <text>1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rh8vxo">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aq5wzz">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xzi26o">
+          <text>"850,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xgsnr2">
+        <inputEntry id="UnaryTests_0imlfi5">
+          <text>2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1x15fll">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10pvamk">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_120q36u">
+          <text>"900,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09oq13d">
+        <inputEntry id="UnaryTests_1nwu9v3">
+          <text>3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_050uwhu">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gelmkv">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jvno16">
+          <text>"950,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01mgt1f">
+        <inputEntry id="UnaryTests_10chozu">
+          <text>4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ku95cz">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pjbrv0">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ceuhvh">
+          <text>"1000,90 por kWh"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="tarifas">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

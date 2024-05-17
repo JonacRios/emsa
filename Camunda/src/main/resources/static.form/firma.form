@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "text": "# Agregar firma",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1v92z8d",
+        "columns": null
+      },
+      "id": "Field_0xjpczb"
+    },
+    {
+      "label": "Agregar nombre completo y cedula",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_13bwd9j",
+        "columns": null
+      },
+      "id": "Field_0qqvtb3",
+      "key": "firma"
+    }
+  ],
+  "type": "default",
+  "id": "form_firma",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 15
+}

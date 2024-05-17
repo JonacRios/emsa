@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0cloedi" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.22.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <decision id="barrios" name="Barrios" camunda:historyTimeToLive="0">
+    <decisionTable id="DecisionTable_0198wqk">
+      <input id="Input_1" label="Nombre del barrio" camunda:inputVariable="barrio">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>barrio</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Disponibilidad" name="disponibilidad" typeRef="boolean" />
+      <rule id="DecisionRule_0zd694w">
+        <inputEntry id="UnaryTests_0g51wiu">
+          <text>"Villa Suarez"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lp4sph">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g6uwot">
+        <inputEntry id="UnaryTests_0c2vk7y">
+          <text>"El Paraiso"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uek6yb">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0y1yhk0">
+        <inputEntry id="UnaryTests_04pljk0">
+          <text>"Florencia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1imtfr7">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0iow53d">
+        <inputEntry id="UnaryTests_1xr375n">
+          <text>"La Ceiba"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04hwx7u">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19s382k">
+        <inputEntry id="UnaryTests_1bth38b">
+          <text>"Jordan"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h0e27k">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1x9dexa">
+        <inputEntry id="UnaryTests_1lt0fx6">
+          <text>"Santa Helena"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w03oxn">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0968hbj">
+        <inputEntry id="UnaryTests_0c6l2dq">
+          <text>"El Bambu"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_153rgzg">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1m9tohv">
+        <inputEntry id="UnaryTests_09abvkp">
+          <text>"Madrigal"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xhwn4c">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11iixr9">
+        <inputEntry id="UnaryTests_1w9az0t">
+          <text>"La Bastilla"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uy3dnw">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_047fon8">
+        <inputEntry id="UnaryTests_0ifoyqz">
+          <text>"Seis de Abril"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nwc9cl">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04fgfzv">
+        <inputEntry id="UnaryTests_1ybbgxt">
+          <text>"Santa Martha"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0icx3ym">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0748x35">
+        <inputEntry id="UnaryTests_0lum59y">
+          <text>"Antonio Villavicencio"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uq03tv">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rxj3ia">
+        <inputEntry id="UnaryTests_09lh89b">
+          <text>"Morichal"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1m8dnhz">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18v9sxn">
+        <inputEntry id="UnaryTests_0xutua1">
+          <text>"San Luis"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0b5eqq9">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1c8e32k">
+        <inputEntry id="UnaryTests_0h8i1la">
+          <text>"El Recreo"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17ebana">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10jl48t">
+        <inputEntry id="UnaryTests_0sz3o14">
+          <text>"La Desmotadora"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nc3cf4">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1l8wafe">
+        <inputEntry id="UnaryTests_11vaag6">
+          <text>"Prados De Ciberia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jgz266">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qy6n0a">
+        <inputEntry id="UnaryTests_0tpih6z">
+          <text>"Cedritos"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1v9z57u">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uyxsku">
+        <inputEntry id="UnaryTests_0lbjzqy">
+          <text>"Covisan"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1e84szz">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10foo46">
+        <inputEntry id="UnaryTests_0q4jekv">
+          <text>"Calamar"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00a4uum">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nsaxku">
+        <inputEntry id="UnaryTests_110br1b">
+          <text>"El Cedral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hxxqb7">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1p35qim">
+        <inputEntry id="UnaryTests_0me2z69">
+          <text>"Villa Fabiola"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xfmmxc">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10vf5x0">
+        <inputEntry id="UnaryTests_0p5so0q">
+          <text>"Populares"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0naohu8">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ijfo37">
+        <inputEntry id="UnaryTests_1p7ob32">
+          <text>"Dos Mil"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0u3le8m">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1d607ms">
+        <inputEntry id="UnaryTests_07pi849">
+          <text>"Olimpica"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1pm5h0m">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10ilsl7">
+        <inputEntry id="UnaryTests_1hpsblh">
+          <text>"Villa Ortiz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a8ki1o">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1syr65g">
+        <inputEntry id="UnaryTests_1mc6qxi">
+          <text>"Camelias"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jmhugz">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lje78y">
+        <inputEntry id="UnaryTests_0sfgsb7">
+          <text>"Cataluña"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1wtu2i9">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00i2p9r">
+        <inputEntry id="UnaryTests_0zyrk4f">
+          <text>"Bello Horizonte" </text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0l8ur5t">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1anhk5d">
+        <inputEntry id="UnaryTests_0z9wku6">
+          <text>"Nueva Floresta"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03luwl5">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0zs5lof">
+        <inputEntry id="UnaryTests_01eff87">
+          <text>"Estero"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_037wihi">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ftbzlo">
+        <inputEntry id="UnaryTests_0xyqp1l">
+          <text>"Bochica"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ouxidz">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07w8rq6">
+        <inputEntry id="UnaryTests_06d2yst">
+          <text>"Macunaima"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12a2211">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qfix0j">
+        <inputEntry id="UnaryTests_0zvpoe2">
+          <text>"Ariguani"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gguvp7">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0t6wqv7">
+        <inputEntry id="UnaryTests_0dylaou">
+          <text>"Vizcaya"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rmtdkx">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ydgnaw">
+        <inputEntry id="UnaryTests_1e87p7g">
+          <text>"Hacaritama"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05xxbft">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ikktlw">
+        <inputEntry id="UnaryTests_0ge3vj2">
+          <text>"Villa Melida"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07bvfqo">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bkw4d9">
+        <inputEntry id="UnaryTests_066061t">
+          <text>"San Antonio"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_058nd23">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0316qqw">
+        <inputEntry id="UnaryTests_1ubhzgf">
+          <text>"Aguas Claras"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0rqbr6p">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0x58e11">
+        <inputEntry id="UnaryTests_0vil995">
+          <text>"Danubio"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_048fdz5">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1gy6kfg">
+        <inputEntry id="UnaryTests_0rk8ety">
+          <text>"Doña Luz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0posb1a">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0u7b6bc">
+        <inputEntry id="UnaryTests_0qztlgg">
+          <text>"Remanso"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dnqwb7">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0kba1wd">
+        <inputEntry id="UnaryTests_1lmbpe5">
+          <text>"Menegua"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dokrax">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0re2f4c">
+        <inputEntry id="UnaryTests_1os9ur4">
+          <text>"Buenos Aires"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ig2bgu">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0glyniz">
+        <inputEntry id="UnaryTests_1iposbv">
+          <text>"Pastrana"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06zi4dq">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00bjgmy">
+        <inputEntry id="UnaryTests_1xcu03t">
+          <text>"Caney"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_002meky">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00ujf79">
+        <inputEntry id="UnaryTests_0jaxbk0">
+          <text>"Simon Bolivar"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hu7pdf">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lfzxuv">
+        <inputEntry id="UnaryTests_14ziq1w">
+          <text>"Macarena"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fg4xdz">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0f59csg">
+        <inputEntry id="UnaryTests_1yda55t">
+          <text>"Retiro"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0inh80s">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ifyhkg">
+        <inputEntry id="UnaryTests_0soyszp">
+          <text>"Amaral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xz5fnf">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14hyqzp">
+        <inputEntry id="UnaryTests_0vosfbx">
+          <text>"Canaima"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_02j7se6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wzlnsf">
+        <inputEntry id="UnaryTests_0086k6r">
+          <text>"Nuevo Maizaro"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05etbj5">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05gpp3g">
+        <inputEntry id="UnaryTests_0fxe1k9">
+          <text>"Catatumbo"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lzrobc">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08vbf8i">
+        <inputEntry id="UnaryTests_0687ytm">
+          <text>"Nogal"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1nrjibh">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1aqujn8">
+        <inputEntry id="UnaryTests_0ic8n2t">
+          <text>"San Benito"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vl02u8">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wxwnjw">
+        <inputEntry id="UnaryTests_0anjum6">
+          <text>"Guatiquia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11bh08u">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sydzpl">
+        <inputEntry id="UnaryTests_0vo5mdm">
+          <text>"Florida"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j5jy7c">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1v8if1r">
+        <inputEntry id="UnaryTests_18i1uuy">
+          <text>"Canta Rana"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0t0pt5q">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1esdm3s">
+        <inputEntry id="UnaryTests_0pdcch3">
+          <text>"Nuevo Recaute"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0knn9jm">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11puxgn">
+        <inputEntry id="UnaryTests_02vjzo1">
+          <text>"San Francisco"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05um64l">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rbunwd">
+        <inputEntry id="UnaryTests_0pvbold">
+          <text>"Brisas del Caney"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05yt1n8">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ic75xo">
+        <inputEntry id="UnaryTests_0kayc7m">
+          <text>"Sausalito"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03cadme">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="barrios">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

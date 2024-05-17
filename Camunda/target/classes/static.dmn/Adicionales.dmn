@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="costosAdicionales" name="Costos Adicionales" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.20.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <decision id="adicionales" name="Adicionales">
+    <decisionTable id="DecisionTable_1arj6zi">
+      <input id="Input_1" label="Tipo de servicio" biodi:width="191" camunda:inputVariable="tipo">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>tipo</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0wn24lk" label="Uso " camunda:inputVariable="servicio">
+        <inputExpression id="LiteralExpression_0yp4vcm" typeRef="string">
+          <text>servicio</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_17d2ct9" label="Quien proporciono el medidor" camunda:inputVariable="medidor">
+        <inputExpression id="LiteralExpression_0jr2poa" typeRef="string">
+          <text>medidor</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Costo Adicional" name="adicional" typeRef="string" />
+      <rule id="DecisionRule_0um42lg">
+        <inputEntry id="UnaryTests_1niw2hz">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0b6sy5g">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bjc5fl">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bt4q58">
+          <text>"150.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_171prad">
+        <inputEntry id="UnaryTests_0ffav9q">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1201m2r">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ljjqf9">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1927cn4">
+          <text>"200.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0duulg8">
+        <inputEntry id="UnaryTests_0h9zgn7">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0v0sh7u">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jft8mj">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ngjp6i">
+          <text>"300.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y23a7k">
+        <inputEntry id="UnaryTests_1fk6hmu">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13mfab0">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n2voah">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10lnbhs">
+          <text>"200.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a5gl67">
+        <inputEntry id="UnaryTests_0d17deq">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19s4x26">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j5tcob">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0adjgy6">
+          <text>"300.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1t4o53p">
+        <inputEntry id="UnaryTests_0ixj9sv">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16cwyvp">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lyx1u1">
+          <text>"cliente"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r5y4bz">
+          <text>"400.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wba8cv">
+        <inputEntry id="UnaryTests_1vxpbjk">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dv0m2a">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01m8bq0">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_13wyqdb">
+          <text>"300.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1sthtig">
+        <inputEntry id="UnaryTests_10jllqz">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16lja0b">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a3m4af">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sfr9k8">
+          <text>"400.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ezirph">
+        <inputEntry id="UnaryTests_1rs6z1l">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t429di">
+          <text>"Residencial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jz2txg">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14g6ma1">
+          <text>"600.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1imtok4">
+        <inputEntry id="UnaryTests_1qgpybs">
+          <text>"Mono"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1024lc0">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n7m2je">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1f33nj5">
+          <text>"350.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0z8tcd9">
+        <inputEntry id="UnaryTests_04ogpu7">
+          <text>"Bi"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pynuyf">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1t0e76b">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_123005p">
+          <text>"500.000 CO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ncu02i">
+        <inputEntry id="UnaryTests_0917b21">
+          <text>"Tri"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hui7bj">
+          <text>"Comercial"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q8ilys">
+          <text>"empresa"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09jxsp8">
+          <text>"700.000 CO"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="adicionales">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

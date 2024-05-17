@@ -1,0 +1,10 @@
+{
+"version": "1.0.0",
+"main": "validation.js",
+"type": "module",
+"author": "Camunda Services GmbH",
+"license": "Apache License 2.0",
+  "dependencies": {
+    "camunda-external-task-client-js": "^3.0.1"
+  }
+}

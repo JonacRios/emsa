@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+      <head th:replace="~{layout/layout :: head}">
+    <meta charset="UTF-8">
+    <title>Energy Form</title>
+</head>
+<body>
+
+<section class="nombreClass">
+    <div class="container-fluid" layout:fragment="views">
+        <div class="col mt-4 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h1 class="text-center">Application History</h1>
+                    </div>
+                </div>
+                <div class="card-body card-text mt-3 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h1>You can view your credits requests here.</h1>
+                        <h3>Person: <span th:text="${person.getId()}"></span></h3>
+                        <br>
+                        <button id="editEnergy" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa-solid fa-pen mx-1"></i>
+                            <span>Edit Current Request</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <form id="routing" method="get">
+                        <table class="table table-striped" id="energyTable">
+                            <thead>
+                            <tr class="text-center">
+                                <th scope="col">Energy Cod</th>
+                                <th scope="col">neighborhood</th>
+                                <th scope="col">Request Date</th>
+                                <th scope="col">Count Reviews</th>
+                                <th scope="col">Tipo de servicio</th>
+                                <th scope="col">Tipo de uso</th>
+                                <th scope="col">Estrato</th>
+                                <th scope="col">Proporciono el medidor</th>
+                                <th scope="col">State</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="text-center" th:each="energyRequest : ${energyRequests}" th:data-energy-request="${energyRequest}">
+                                <td><span th:text="${energyRequest.processId}"></span></td>
+                                <td><span th:text="${energyRequest.barrio}"></span></td>
+                                <td><span th:text="${energyRequest.requestDate}"></span></td>
+                                <td><span th:text="${energyRequest.countReviewCR}"></span></td>
+                                <td><span th:text="${energyRequest.servicio}"></span></td>
+                                <td><span th:text="${energyRequest.tipo}"></span></td>
+                                <td><span th:text="${energyRequest.estrato}"></span></td>
+                                <td><span th:text="${energyRequest.medidor}"></span></td>
+                                <td><span th:text="${energyRequest.status}"></span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <input type="hidden" name="taskId" id="taskId" />
+
+
+                        <div class="text-center">
+                            <button id="confirmRequest" class="btn btn-danger" type="submit" onclick="enviarFilaConEstadoDraft()">
+                                <i class="fa-solid fa-circle-check mx-1"></i>
+                                <span>Confirm Request</span>
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form id="personForm" th:action="@{/energy_request/update}" th:object="${energyInfoDTO}" method="post" enctype="multipart/form-data"
+                              onsubmit="return validateFormField(this);">
+
+                            <div class="modal-body">
+                                <div th:replace="~{fragments/formEnergy.html}"></div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button id="submitBothForms" type="submit" class="btn btn-primary"
+                                        onclick="submitFormExternally()">Send message
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<th:block layout:fragment="page-scripts">
+    <script th:src="@{js/validationsFormCredits.js}"></script>
+    <script th:src="@{js/ListEnergy.js}"></script>
+    <script th:src="@{js/start-instance.js}"></script>
+</th:block>
+</body>
+</html>

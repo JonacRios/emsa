@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head th:replace="~{layout/layout :: head}">
+<meta charset="UTF-8">
+</head>
+<body>
+
+	<section class="dinamico">
+		<div class="h-100 d-flex align-items-center justify-content-center flex-column p-4" layout:fragment="views">
+			<h1 class="text-center text-primary mb-4" th:text="${titulo}"></h1>
+			<p class="mr-4 ms-4">Bienvenido a nuestra página de solicitud de servicio eléctrico! 
+				Estamos encantados de ayudarte en el proceso de matriculación para obtener el 
+				suministro de energía que necesitas en tu hogar. En esta plataforma, puedes proporcionar 
+				tu información personal y detalles relevantes sobre tu residencia y necesidades energéticas. 
+				Nuestro objetivo es brindarte una experiencia simple y segura para solicitar la matriculación 
+				al servicio eléctrico que se ajuste a tus necesidades. A través de los formularios disponibles, 
+				puedes compartir información detallada como tus datos personales, de contacto, así como información
+				relacionada con tu domicilio y requerimientos eléctricos. 
+				Estamos comprometidos en ayudarte a obtener el suministro de energía necesario para 
+				tu hogar y esperamos ser tu compañero en este proceso. ¡Comencemos!</p>
+		</div>
+	</section>
+</body>
+</html>

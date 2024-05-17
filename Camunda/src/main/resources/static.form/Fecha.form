@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "text": "# Asignar fecha tentativa",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0td5sb2",
+        "columns": null
+      },
+      "id": "Field_0xe2xyw"
+    },
+    {
+      "subtype": "datetime",
+      "dateLabel": "Fecha",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0185zj4",
+        "columns": null
+      },
+      "id": "Field_19nvzub",
+      "key": "fechaTentativa",
+      "timeLabel": "Hora",
+      "timeSerializingFormat": "utc_offset",
+      "timeInterval": 15,
+      "use24h": false,
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "form_fecha",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.20.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.20.0",
+  "schemaVersion": 15
+}

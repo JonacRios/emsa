@@ -42,11 +42,14 @@ Este es el link del repositorio publico https://github.com/JonacRios/Emsa/Client
     - Asi se miraria la instancia creada en camunda
     - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/3.PNG)
     - Asi se miraria el cliente una vez creada la instancia y enviado los datos
-    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/4.PNG)
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/3.PNG)
+    
 7. **Confirmar el formulario:**
     - Una vez terminado de llenar todo, se le da confirmar y este enviara la confirmacion al camunda y completara automaticamente la tarea, asi.
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/4.PNG)
     - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/5.PNG)   
     -  Asi se miraria en el camunda
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/5.PNG)   
     Una vez completada la tarea
     Sigue el flujo de negocio para que el servicio al cliente continue con la solicitud.
 

@@ -33,15 +33,19 @@ Este es el link del repositorio publico https://github.com/JonacRios/Emsa/Client
    - Una vez realizado esto en la parte inferiro se le abrira una consola la cual indicara que el programa esta corriendo.
 
 6. **Registrar un cliente:**
-   - Ir a la ruta [localhost://](http://localhost:8081/)register-energy
+   - Ir a la ruta http://localhost:8081/register-energy
    En el momento que se le da save, se iniciara automaticamente una instancia en camunda, obvio esto solo funcionara si y solo si el proceso de negocio de camunda esta desplegado.
 ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/1.PNG)
 7. **Ver inicio de instancia en Camunda:**
-    - Una vez guardado la solicitudm esta pasara automaticamente a camunda, quien recibira toda la informacion e iniciara una instancia.
+    - Una vez guardado la solicitud esta pasara automaticamente a camunda, quien recibira toda la informacion e iniciara una instancia.
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/2.PNG)
     - Asi se miraria la instancia creada en camunda
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/3.PNG)
     - Asi se miraria el cliente una vez creada la instancia y enviado los datos
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/4.PNG)
 7. **Confirmar el formulario:**
-    - Una vez terminado de llenar todo, se le da confirmar y este enviara la confirmacion al camunda y completara automaticamente la tarea, asi.   
+    - Una vez terminado de llenar todo, se le da confirmar y este enviara la confirmacion al camunda y completara automaticamente la tarea, asi.
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/5.PNG)   
     -  Asi se miraria en el camunda
     Una vez completada la tarea
     Sigue el flujo de negocio para que el servicio al cliente continue con la solicitud.

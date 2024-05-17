@@ -38,9 +38,9 @@ Este es el link del repositorio publico https://github.com/JonacRios/Emsa/Client
 ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/1.PNG)
 7. **Ver inicio de instancia en Camunda:**
     - Una vez guardado la solicitud esta pasara automaticamente a camunda, quien recibira toda la informacion e iniciara una instancia.
-    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/2.PNG)
-    - Asi se miraria la instancia creada en camunda
     - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/3.PNG)
+    - Asi se miraria la instancia creada en camunda
+    - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/2.PNG)
     - Asi se miraria el cliente una vez creada la instancia y enviado los datos
     - ![image](https://github.com/JonacRios/emsa/blob/master/CliEmsa/src/main/resources/capturas/3.PNG)
     
